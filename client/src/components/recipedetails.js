@@ -24,7 +24,7 @@ const RecipeDetails = () => {
      const navigate = useNavigate();
     useEffect(() => {
     async function fetchData() {                                    //get recipe from mongodb
-        const response = await fetch(`http://localhost:5050/record/${_id.toString()}`);
+        const response = await fetch(`https://recipez.onrender.com/record/${_id.toString()}`);
         if (!response.ok) {
            const message = `An error has occurred: ${response.statusText}`;
            window.alert(message);
